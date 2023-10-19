@@ -1,0 +1,63 @@
+/* Styling for the code editor container */
+.code-editor {
+  border: 0px solid #ccc; /* Border with zero width, effectively hidden */
+  border-radius: 4px;
+  max-width: 1000px; /* Maximum width for the code editor */
+  margin: 0 auto; /* Center the code editor horizontally */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for background and text color */
+}
+
+/* Styling for the code editor header */
+.code-editor__header {
+  width: 398%; /* Unusually wide header (may be a typo) */
+  background-color: #333333;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end; /* Right-align the content within the header */
+}
+
+/* Styling for buttons in the header */
+.code-editor__header button {
+  margin: 0 1px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for the content area */
+.code-editor__content {
+  padding: 1px;
+}
+
+/* Styling for the code editor textarea */
+.code-editor__content textarea {
+  width: 400%; /* Unusually wide textarea (may be a typo) */
+  min-height: 80vh; /* Minimum height relative to the viewport height */
+  border: 2px solid #ccc; /* Border around the textarea */
+  padding: 8px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode styles for the code editor and its components */
+.dark-mode .code-editor {
+  /* background-color: #333; /* Dark background color */ */
+  color: #fff; /* Light text color */
+  border-color: #555; /* Darker border color */
+}
+
+.dark-mode .code-editor__header {
+  background-color: #222; /* Dark background color for the header */
+}
+
+.dark-mode .code-editor__header button {
+  background-color: #444; /* Darker button background color */
+}
+
+.dark-mode .code-editor__content textarea {
+  background-color: black; /* Dark background for the textarea */
+  color: #fff; /* Light text color for the textarea */
+}
